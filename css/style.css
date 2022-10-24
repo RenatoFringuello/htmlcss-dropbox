@@ -9,18 +9,29 @@ header{
     padding: 0.3rem 0.5rem;
 }
 header nav{
-    flex-basis: 20%;
+    flex-basis: 30%;
     height: 3rem;
     background-color: orangered;
 }
 
 /* ----------------------------- MAIN ---------------------------- */
 main section{
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
+/* intro */
 #intro .big-container{
     background-color: blue;
     height: 30rem;
+    position: relative;
+}
+
+/* plans */
+#plans .small-container{
+    background-color: maroon;
+}
+#partner{
+    height: 20rem;
+    background-color: blueviolet;
 }
 /* ----------------------------- FOOTER ---------------------------- */
 
@@ -29,6 +40,9 @@ main section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 .container{
@@ -41,8 +55,32 @@ main section{
     width: 65%;
 }
 
+/* header */
+.heading-container{
+    height: 5rem;
+    background-color: aquamarine;
+}
+
+/* cards */
+    /* cardC2a */
+.cardC2a{
+    background-color: yellow;
+    height: 40rem;
+    flex-basis: calc(100% / 3 - 1rem);
+}
+.cardC2a-big{
+    height: 20rem;
+    flex-grow: 1;
+    margin-top:1.5rem;
+}
+
 /* ----------------------------- IDS ---------------------------- */
 #intro{
     background-color: aqua;
     height: 28rem;
+}
+
+#plans{
+    background-color: violet;
+    margin-top: 5rem;
 }
