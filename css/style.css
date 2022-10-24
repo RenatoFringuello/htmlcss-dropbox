@@ -9,8 +9,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
-a{
+h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+a:not(.default-a){
     text-decoration: none;
     color: inherit;
 }
@@ -26,10 +29,8 @@ button{
     font-size: 0.8rem;
 }
 
-
 /* ----------------------------- HEADER ---------------------------- */
 header{
-    /* padding: 0.3rem 0.5rem; */
     color: black;
 }
 
@@ -73,7 +74,53 @@ main > section{
 }
 
 /* plans */
-#plans .small-container{
+#plans .radios-container{
+    padding-bottom: 1.5rem;
+}
+#plans label{
+    margin-right: 2rem;
+}
+    /* cardC2a */
+#plans .cardC2a{
+    background-color: yellow;
+    height: 46rem;
+}
+#plans .cardC2a header,
+#plans .cardC2a .cardC2a-main{
+    border: 1px solid #0006;
+}
+#plans .cardC2a > header{
+    text-align: center;
+    padding: 0.3rem 0;
+    border-bottom:0 ;
+}
+#plans .cardC2a-main{
+    padding: 1.2rem;
+    height: 100%;
+}
+#plans .cardC2a-main h2,
+#plans .cardC2a-main .price{
+    margin-bottom: 0.5rem;
+}
+#plans .item{
+    padding:0.5rem  0;
+}
+#plans .item i{
+    flex-basis: 1rem;
+    align-self: flex-start;
+    padding: 0.3rem 0.3rem 0.3rem 0rem;
+}
+#plans .item-text{
+    flex-grow: 1;
+}
+#plans button{
+    width: 100%;
+}
+
+
+#plans .cardC2a-big{
+    height: 20rem;
+    flex-grow: 1;
 }
 #partner{
     height: 20rem;
@@ -107,8 +154,9 @@ main > section{
     height: 15rem;
 } */
 /* ----------------------------- FOOTER ---------------------------- */
-footer{
+body > footer{
     background-color: black;
+    color: white;
 }
 footer nav ul{
     background-color: crimson;
@@ -117,9 +165,13 @@ footer nav ul{
 }
 /* ----------------------------- CLASS ---------------------------- */
 .divider{
-    border: 1px solid white;
-    width: 10rem;
-    margin: 1rem 0;
+    border: 1px solid;
+    width: 20%;
+}
+
+/* margin */
+.marginTB2{
+    margin:2rem 0;
 }
 
 /* flex */
@@ -133,28 +185,35 @@ footer nav ul{
 }
 
 /* container */
-.container{
+.center{
     margin: auto;
 }
 .big-container{
     width: 65%;
 }
 .small-container{
-    width: 40%;
+    width: 55%;
     background-color: maroon;
 }
 /* fonts*/
-    /* > 1rem */
-.big-font3{
-}
     /* < 1rem */
 .small-font08{
     font-size: 0.8rem;
 }
+    /* colors */
+.bold{
+    font-weight: bold;
+}
+.gray-text{
+    color:#0006;
+}
+.royal-blue{
+    color: #0061ff;
+}
 
 /* header */
 .heading-container{
-    height: 5rem;
+    padding-bottom: 2.5rem;
     background-color: aquamarine;
 }
 
@@ -162,15 +221,6 @@ footer nav ul{
 .card{
     flex-basis: calc(100% / 3 - 0.5rem);
     margin-bottom:1rem;
-}
-    /* cardC2a */
-.cardC2a{
-    background-color: yellow;
-    height: 40rem;
-}
-.cardC2a-big{
-    height: 20rem;
-    flex-grow: 1;
 }
 
     /* cardInfo */
