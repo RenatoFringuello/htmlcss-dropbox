@@ -20,14 +20,12 @@ main > section{
 }
 /* intro */
 #intro .big-container{
-    background-color: blue;
     height: 30rem;
     position: relative;
 }
 
 /* plans */
 #plans .small-container{
-    background-color: maroon;
 }
 #partner{
     height: 20rem;
@@ -39,7 +37,7 @@ main > section{
     background-color:bisque;
 }
 #partners .squares-container{
-    background-color: black;
+    background-color: royalblue;
     height: calc(100vw / 3);
     max-height: 28rem;
     flex-basis: calc(100vw / 3);
@@ -50,9 +48,31 @@ main > section{
     height: 50%;
     flex-basis: 50%;
 }
-/* ----------------------------- FOOTER ---------------------------- */
 
+/* trial */
+#trial .small-container{
+    height: 15rem;
+}
+
+/* faq */
+/* #faq .cardFaq{
+    height: 15rem;
+} */
+/* ----------------------------- FOOTER ---------------------------- */
+footer{
+    background-color: black;
+}
+footer nav ul{
+    background-color: crimson;
+    height: 15rem;
+    flex-basis: calc(100% / 5 - 1rem);
+}
 /* ----------------------------- CLASS ---------------------------- */
+.divider{
+    border: 1px solid white;
+    width: 10rem;
+    margin: 1rem 0;
+}
 .flex-between-center{
     display: flex;
     justify-content: space-between;
@@ -66,10 +86,12 @@ main > section{
     margin: auto;
 }
 .big-container{
-    width: 80%;
+    width: 70%;
+    background-color: blue;
 }
 .small-container{
-    width: 65%;
+    width: 55%;
+    background-color: maroon;
 }
 
 /* header */
@@ -80,8 +102,8 @@ main > section{
 
 /* cards */
 .card{
-    flex-basis: calc(100% / 3 - 1rem);
-    margin-bottom:1.5rem;
+    flex-basis: calc(100% / 3 - 0.5rem);
+    margin-bottom:1rem;
 }
     /* cardC2a */
 .cardC2a{
@@ -99,6 +121,11 @@ main > section{
     height: 20rem;
 }
 
+    /* cardFaq */
+.cardFaq{
+    height: 3rem;
+    background-color: tomato;
+}
 /* ----------------------------- IDS ---------------------------- */
 #intro{
     background-color: aqua;
@@ -114,4 +141,10 @@ main > section{
 }
 #partners{
     background-color: green;
+}
+#trial{
+    background-color: lime;
+}
+#faq{
+    background-color: cadetblue;
 }
