@@ -3,3 +3,46 @@
     margin:0;
     box-sizing:border-box;
 }
+/* ----------------------------- HEADER ---------------------------- */
+header{
+    background-color: orange;
+    padding: 0.3rem 0.5rem;
+}
+header nav{
+    flex-basis: 20%;
+    height: 3rem;
+    background-color: orangered;
+}
+
+/* ----------------------------- MAIN ---------------------------- */
+main section{
+    padding-top: 2rem;
+}
+#intro .big-container{
+    background-color: blue;
+    height: 30rem;
+}
+/* ----------------------------- FOOTER ---------------------------- */
+
+/* ----------------------------- CLASS ---------------------------- */
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    margin: auto;
+}
+.big-container{
+    width: 80%;
+}
+.small-container{
+    width: 65%;
+}
+
+/* ----------------------------- IDS ---------------------------- */
+#intro{
+    background-color: aqua;
+    height: 28rem;
+}
