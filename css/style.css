@@ -35,16 +35,12 @@ header{
 }
 
 header nav{
-    flex-basis: 50%;
     padding: 1rem 0;
 }
 header nav > *{
     display: inline-block;
     margin: 0 0.8rem;
     vertical-align: middle;
-}
-.personal-nav{
-    text-align: end;
 }
 
 /* ----------------------------- MAIN ---------------------------- */
@@ -80,14 +76,14 @@ main > section{
 #plans label{
     margin-right: 2rem;
 }
+
     /* cardC2a */
 #plans .cardC2a{
-    background-color: yellow;
-    height: 46rem;
+    height: 48rem;
 }
 #plans .cardC2a header,
 #plans .cardC2a .cardC2a-main{
-    border: 1px solid #0006;
+    border: 1px solid #0004;
 }
 #plans .cardC2a > header{
     text-align: center;
@@ -116,15 +112,20 @@ main > section{
 #plans button{
     width: 100%;
 }
-
-
 #plans .cardC2a-big{
-    height: 20rem;
+    height: auto;
     flex-grow: 1;
+    margin-top: 3rem;
 }
-#partner{
-    height: 20rem;
+#plans .cardC2a-big .cardC2a-main{
+    align-items: flex-start;
+}
+
+footer#partner{
     background-color: blueviolet;
+}
+footer#partner img{
+    height: auto;
 }
 
 /* partners */
@@ -170,10 +171,18 @@ footer nav ul{
 }
 
 /* margin */
-.marginTB2{
-    margin:2rem 0;
+.marginT2{
+    margin-top:2rem;
 }
-
+.marginB2{
+    margin-bottom:2rem;
+}
+.paddingT4{
+    padding-top:4rem;
+}
+.paddingB4{
+    padding-bottom:4rem;
+}
 /* flex */
 .flex-between-center{
     display: flex;
@@ -182,6 +191,14 @@ footer nav ul{
 }
 .flex-wrap{
     flex-wrap: wrap;
+}
+.left{
+    flex-basis: 50%;
+    flex-grow: 1;
+    text-align: start;
+}
+.right{
+    text-align: end;
 }
 
 /* container */
@@ -193,7 +210,6 @@ footer nav ul{
 }
 .small-container{
     width: 55%;
-    background-color: maroon;
 }
 /* fonts*/
     /* < 1rem */
@@ -201,11 +217,8 @@ footer nav ul{
     font-size: 0.8rem;
 }
     /* colors */
-.bold{
-    font-weight: bold;
-}
 .gray-text{
-    color:#0006;
+    color:#0005;
 }
 .royal-blue{
     color: #0061ff;
@@ -214,12 +227,11 @@ footer nav ul{
 /* header */
 .heading-container{
     padding-bottom: 2.5rem;
-    background-color: aquamarine;
 }
 
 /* cards */
 .card{
-    flex-basis: calc(100% / 3 - 0.5rem);
+    flex-basis: calc(100% / 3 - 1.5rem);
     margin-bottom:1rem;
 }
 
