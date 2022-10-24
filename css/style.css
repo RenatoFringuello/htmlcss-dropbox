@@ -62,16 +62,24 @@ main section{
 }
 
 /* cards */
+.card{
+    flex-basis: calc(100% / 3 - 1rem);
+    margin-bottom:1.5rem;
+}
     /* cardC2a */
 .cardC2a{
     background-color: yellow;
     height: 40rem;
-    flex-basis: calc(100% / 3 - 1rem);
 }
 .cardC2a-big{
     height: 20rem;
     flex-grow: 1;
-    margin-top:1.5rem;
+}
+
+    /* cardInfo */
+.cardInfo{
+    background-color: yellow;
+    height: 20rem;
 }
 
 /* ----------------------------- IDS ---------------------------- */
@@ -83,4 +91,7 @@ main section{
 #plans{
     background-color: violet;
     margin-top: 5rem;
+}
+#operations{
+    background-color: red;
 }
