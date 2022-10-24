@@ -17,9 +17,6 @@ a:not(.default-a){
     text-decoration: none;
     color: inherit;
 }
-img{
-    height: 100%;
-}
 
 /* buttons */
 button{
@@ -27,8 +24,14 @@ button{
     background-color: #0061ff;
     color: white;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
+button.whiteBtn{
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
 /* ----------------------------- HEADER ---------------------------- */
 header{
     color: black;
@@ -43,9 +46,14 @@ header nav > *{
     vertical-align: middle;
 }
 
+header img,
+#intro img{
+    height: 100%;
+}
+
 /* ----------------------------- MAIN ---------------------------- */
 main > section{
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 /* intro */
 #intro .big-container{
@@ -83,7 +91,7 @@ main > section{
 }
 #plans .cardC2a header,
 #plans .cardC2a .cardC2a-main{
-    border: 1px solid #0004;
+    border: 1px solid #0002;
 }
 #plans .cardC2a > header{
     text-align: center;
@@ -109,7 +117,7 @@ main > section{
 #plans .item-text{
     flex-grow: 1;
 }
-#plans button{
+#plans .cardC2a-main button{
     width: 100%;
 }
 #plans .cardC2a-big{
@@ -120,12 +128,38 @@ main > section{
 #plans .cardC2a-big .cardC2a-main{
     align-items: flex-start;
 }
+#plans .cardC2a-big .cardC2a-main .left{
+    flex-basis: 72%;
+}
+#plans .cardC2a-big .cardC2a-main .right{
+    flex-basis: 26%;
+}
 
 footer#partner{
-    background-color: blueviolet;
+    align-items: flex-start;
 }
-footer#partner img{
-    height: auto;
+footer#partner .left img{
+    width: 100%;
+}
+footer#partner .right{
+    padding: 2.5rem;
+}
+
+/* functions */
+    /* cardInfo */
+.cardInfo{
+    height: 25rem;
+    text-align: center;
+}
+.cardInfo img{
+    height: 50%;
+}
+.cardInfo h2,
+.cardInfo p{
+    text-align: start;
+}
+.cardInfo img{
+    height: 50%;
 }
 
 /* partners */
@@ -140,9 +174,13 @@ footer#partner img{
     max-width: 28rem;
 }
 #partners .square{
-    border: 1px solid white;
+    border: 1px solid;
     height: 50%;
     flex-basis: 50%;
+}
+#partners .square img{
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 
 /* trial */
@@ -177,13 +215,16 @@ footer nav ul{
 .marginB2{
     margin-bottom:2rem;
 }
-.paddingT4{
-    padding-top:4rem;
+.paddingT6{
+    padding-top:6rem;
 }
-.paddingB4{
-    padding-bottom:4rem;
+.paddingB6{
+    padding-bottom:6rem;
 }
 /* flex */
+.flex{
+    display: flex;
+}
 .flex-between-center{
     display: flex;
     justify-content: space-between;
@@ -193,12 +234,10 @@ footer nav ul{
     flex-wrap: wrap;
 }
 .left{
-    flex-basis: 50%;
-    flex-grow: 1;
-    text-align: start;
+    flex-basis: 60%;
 }
 .right{
-    text-align: end;
+    flex-basis: 40%;
 }
 
 /* container */
@@ -211,6 +250,11 @@ footer nav ul{
 .small-container{
     width: 55%;
 }
+
+.desc{
+    margin:1rem 0
+}
+
 /* fonts*/
     /* < 1rem */
 .small-font08{
@@ -234,13 +278,6 @@ footer nav ul{
     flex-basis: calc(100% / 3 - 1.5rem);
     margin-bottom:1rem;
 }
-
-    /* cardInfo */
-.cardInfo{
-    background-color: yellow;
-    height: 20rem;
-}
-
     /* cardFaq */
 .cardFaq{
     height: 3rem;
@@ -250,15 +287,13 @@ footer nav ul{
 #intro{
     background-color: #b4d0e7;
     height: 70vh;
+    padding-top: 3rem;
 }
 
 #plans{
-    background-color: violet;
     margin-top: 5rem;
 }
-#operations{
-    background-color: red;
-}
+
 #partners{
     background-color: green;
 }
@@ -268,3 +303,5 @@ footer nav ul{
 #faq{
     background-color: cadetblue;
 }
+
+/* partners brand */
