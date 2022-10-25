@@ -18,6 +18,13 @@ a:not(.default-a){
     color: inherit;
 }
 
+nav > ul{
+    list-style-type: none;
+}
+nav > ul > li{
+    margin-bottom: 0.5rem;
+}
+
 /* buttons */
 button{
     padding: 0.5rem 1rem;
@@ -173,12 +180,6 @@ footer#partner > :nth-child(2){
     border: 2vw solid #fff6;
 }
 
-
-/* trial */
-#trial .small-container{
-    
-}
-
 /* faq */
     /* cardFaq */
 #faq .cardFaq:last-child{
@@ -213,10 +214,17 @@ body > footer{
     background-color: black;
     color: white;
 }
+footer nav{
+    padding:4rem 0;
+}
 footer nav ul{
-    background-color: crimson;
-    height: 15rem;
     flex-basis: calc(100% / 5 - 1rem);
+}
+footer nav .title{
+    margin-bottom: 1rem;
+}
+footer select{
+    margin-bottom:2rem;
 }
 /* ----------------------------- CLASS ---------------------------- */
 .divider{
