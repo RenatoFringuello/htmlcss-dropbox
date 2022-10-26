@@ -167,6 +167,11 @@ button.whiteBtn{
     border: 2vw solid #fff6;
 }
 
+/* trial */
+#trial h1{
+    width: 50%;
+}
+
 /* faq */
     /* cardFaq */
 #faq .cardFaq:last-child{
@@ -225,13 +230,6 @@ button.whiteBtn{
     display: none;
 }
 
-/* margin */
-.marginT2{
-    margin-top:2rem;
-}
-.marginB2{
-    margin-bottom:2rem;
-}
 /* padding */
 .padding2{
     padding:2rem;
@@ -242,6 +240,21 @@ button.whiteBtn{
 .paddingB6{
     padding-bottom:6rem;
 }
+
+/* margin */
+.marginT2{
+    margin-top:2rem;
+}
+.marginB2{
+    margin-bottom:2rem;
+}
+.desc{
+    margin:1rem 0;
+}
+.center{
+    margin: auto;
+}
+
 /* flex */
 .flex{
     display: flex;
@@ -264,9 +277,6 @@ button.whiteBtn{
 .flex-basis60{
     flex-basis: 60%;
 }
-.flex-basis50{
-    flex-basis: 50%;
-}
 .flex-basis40{
     flex-basis: 40%;
 }
@@ -275,9 +285,6 @@ button.whiteBtn{
 }
  
 /* container */
-.center{
-    margin: auto;
-}
 .big-container{
     width: 65%;
 }
@@ -290,10 +297,6 @@ button.whiteBtn{
 .img-container{
     text-align: center;
     width: 100%;
-}
-
-.desc{
-    margin:1rem 0;
 }
 
 /* fonts*/
