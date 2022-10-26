@@ -105,7 +105,7 @@ main > section{
     padding: 1.2rem;
     height: 100%;
 }
-#plans .cardC2a-main .price,
+#plans .cardC2a-main h3,
 #plans .item{
     margin: 0.5rem 0;
 }
@@ -129,7 +129,6 @@ main > section{
 }
 
 /* partner */
-
 #partner img{
     width: 100%;
 }
@@ -141,8 +140,11 @@ main > section{
 .cardInfo{
     height: 25rem;
 }
-.cardInfo img{
+.cardInfo .img-container{
     height: 50%;
+}
+.img-container img{
+    height: 100%;
 }
 
 /* partners */
@@ -284,9 +286,16 @@ main > section{
 .small-container{
     width: 55%;
 }
+.heading-container{
+    padding-bottom: 2.5rem;
+}
+.img-container{
+    text-align: center;
+    width: 100%;
+}
 
 .desc{
-    margin:1rem 0
+    margin:1rem 0;
 }
 
 /* fonts*/
@@ -296,7 +305,7 @@ main > section{
 }
     /* colors */
 .gray-text{
-    color:#0005;
+    color:#bcbcbc;
 }
 .royal-blue{
     color: #0061ff;
@@ -304,25 +313,13 @@ main > section{
 .dark-red{
     color: #61082b;
 }
-.bold{
-    font-weight: bold;
-}
-.ta-start{
-    text-align: start;
-}
-.ta-center{
-    text-align: center;
-}
-.ta-end{
-    text-align: end;
-}
 
-/* header */
-.heading-container{
-    padding-bottom: 2.5rem;
-}
+
 
 /* cards */
+.card:not(.cardFaq) header{
+    text-align: center;
+}
 .card{
     flex-basis: calc(100% / 3 - 1.5rem);
     margin-bottom:1rem;
