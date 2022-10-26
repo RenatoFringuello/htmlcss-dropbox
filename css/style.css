@@ -128,22 +128,23 @@ main > section{
     width: auto;
 }
 
+/* partner */
 
-footer#partner img{
+#partner img{
     width: 100%;
 }
-footer#partner > :nth-child(2){
+#partner .c2a{
     padding: 2.5rem;
 }
 
 /* functions */
-    /* cardInfo */
 .cardInfo{
     height: 25rem;
 }
 .cardInfo img{
     height: 50%;
 }
+
 /* partners */
 #partners > div{
     background-color: #f5f5f5;
