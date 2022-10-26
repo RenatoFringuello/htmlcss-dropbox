@@ -21,9 +21,7 @@ a:not(.default-a){
 nav > ul{
     list-style-type: none;
 }
-nav > ul > li{
-    margin-bottom: 0.5rem;
-}
+
 
 /* buttons */
 button{
@@ -42,24 +40,23 @@ button.whiteBtn{
 /* ----------------------------- HEADER ---------------------------- */
 header{
     color: black;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
 }
-
 header nav{
-    padding: 1rem 0;
+    height: 100%;
 }
-header nav > *{
+header nav > ul > li{
     display: inline-block;
-    margin: 0 0.8rem;
+    margin:0 0.8rem;
+}
+header img{
+    height: 100%;
     vertical-align: middle;
 }
 
-
-header img{
-    height: 100%;
-}
-#intro img{
-    height: 30vw;
-}
 
 /* ----------------------------- MAIN ---------------------------- */
 main > section{
@@ -87,6 +84,9 @@ main > section{
 #intro img{
     height: 22rem;
 }
+/* #intro img{
+    height: 30vw;
+} */
 
 /* plans */
 #plans .radios-container{
@@ -217,8 +217,11 @@ body > footer{
 footer nav{
     padding:4rem 0;
 }
-footer nav ul{
+footer nav > ul{
     flex-basis: calc(100% / 5 - 1rem);
+}
+footer nav > ul > li{
+    margin-bottom: 0.5rem;
 }
 footer nav .title{
     margin-bottom: 1rem;
@@ -336,7 +339,7 @@ footer select{
 #intro{
     background-color: #b4d0e7;
     /* height: 70vh; */
-    padding-top: 3rem;
+    padding-top: calc(80px + 3rem);
 }
 #plans{
     margin-top: 5rem;
