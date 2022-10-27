@@ -40,21 +40,13 @@ button.whiteBtn{
 .header-main{
     color: black;
     position: fixed;
-    height: 80px;
+    padding: 1rem 0;
     width: 100%;
     background-color: white;
     z-index: 1;
 }
-.header-main nav{
-    height: 100%;
-}
 .header-main nav > ul > li{
-    display: inline-block;
     margin:0 1rem;
-}
-.header-main img{
-    height: 100%;
-    vertical-align: middle;
 }
 
 /* ----------------------------- MAIN ---------------------------- */
@@ -130,14 +122,8 @@ button.whiteBtn{
 }
 
 /* functions */
-.cardInfo{
-    height: 25rem;
-}
-.cardInfo .img-container{
-    height: 50%;
-}
-.img-container img{
-    height: 100%;
+#functions .cardInfo img{
+    width: 100%;
 }
 
 /* partners */
@@ -293,10 +279,6 @@ button.whiteBtn{
 }
 .heading-container{
     padding-bottom: 2.5rem;
-}
-.img-container{
-    text-align: center;
-    width: 100%;
 }
 
 /* fonts*/
