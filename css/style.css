@@ -78,17 +78,15 @@ button.whiteBtn{
     margin-right: 2rem;
 }
     /* cardC2a */
-#plans .cardC2a header,
-#plans .cardC2a .cardC2a-main{
+#plans .cardC2a{
     border: 1px solid #0002;
 }
 #plans .cardC2a > header{
     padding: 0.3rem 0;
-    border-bottom:0 ;
+    border-bottom:1px solid #0002 ;
 }
 #plans .cardC2a-main{
     padding: 1.2rem;
-    height: 100%;
 }
 #plans .cardC2a-main h3,
 #plans .item{
@@ -101,16 +99,13 @@ button.whiteBtn{
 #plans .item-text{
     flex-grow: 1;
 }
-#plans .cardC2a-main button{
+#plans .cards-row .cardC2a-main button{
     width: 100%;
 }
 #plans .cardC2a-big{
     height: auto;
     width: 100%;
     margin-top: 3rem;
-}
-#plans .cardC2a-big button{
-    width: auto;
 }
 
 /* partner */
